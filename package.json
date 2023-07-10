@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://emutis21.github.io/conversor-javascript/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
