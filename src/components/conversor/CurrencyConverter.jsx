@@ -20,7 +20,7 @@ const ConversorMoneda = () => {
 
     try {
       const response = await fetch(
-      // `https://v6.exchangerate-api.com/v6/10cf0941422531a7d2042965/latest/${currencyOne}`
+      `https://v6.exchangerate-api.com/v6/10cf0941422531a7d2042965/latest/${currencyOne}`
       )
       const data = await response.json()
 
