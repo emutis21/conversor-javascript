@@ -8,7 +8,7 @@ export const Main = ({ components }) => {
   const { selectedTab, setSelectedTab } = useSelectedTab(components[0], components)
 
   return (
-    <main className="flex flex-col mt-[10rem] justify-center items-center w-11/12 md:w-3/5 lg:w-2/5 mx-auto">
+    <main className="flex flex-col mt-[3rem] md:mt-[10rem] justify-center items-center w-11/12 md:w-3/5 lg:w-2/5 mx-auto">
       <ToggleButton />
 
       <TabNavigation components={components} selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
