@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "sass": "^1.63.6",
     "scss": "^0.2.4",
-    "use-sound": "^4.0.1"
+    "use-sound": "^4.0.1",
+    "vercel": "^31.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
