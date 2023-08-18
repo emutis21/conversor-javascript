@@ -24,14 +24,28 @@ body {
   color: var(--text-primary);
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg-primary: #{$bg-primary-dark};
+    --text-primary: #{$text-primary-dark};
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --bg-primary: #{$bg-primary-light};
+    --text-primary: #{$text-primary-light};
+  }
+}
+
 h1,
 h2,
 p {
   text-wrap: balance;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -52,4 +66,25 @@ ul {
 .selected {
   background-color: hsl(229, 61%, 34%);
   color: hsl(0, 0%, 100%);
+}
+
+li.selected {
+  transition: all 0.3s;
+  border-bottom: transparent;
+  background: hsl(220, 100%, 32%);
+}
+.moon {
+  fill: #000000;
+  background-color: hsl(224, 76%, 60%);
+  color: transparent;
+  border-radius: 50%;
+  padding: 1px;
+}
+
+.sun{
+  fill: transparent;
+  background-color: hsl(220, 13%, 73%);
+  color: hsl(60, 100%, 5%);
+  border-radius: 50%;
+  padding: 1px;
 }

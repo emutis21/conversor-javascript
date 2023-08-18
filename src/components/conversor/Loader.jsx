@@ -1,11 +1,9 @@
-import React from "react";
-
 const Loader = (error) => {
   return (
     <svg
       aria-hidden="true"
       className={`w-8 h-8 text-gray-600 animate-spin dark:text-gray-200 fill-blue-300 dark:fill-blue-600 grid place-items-center ${
-        error ? "mx-32 sm:mx-60 xl:mx-80" : "m-0"
+        error ? 'mx-32 sm:mx-60 xl:mx-80' : 'm-0'
       } `}
       viewBox="0 0 100 101"
       fill="none"
@@ -20,7 +18,7 @@ const Loader = (error) => {
         fill="currentFill"
       />
     </svg>
-  );
-};
+  )
+}
 
-export default Loader;
+export default Loader
