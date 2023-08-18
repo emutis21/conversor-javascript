@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import Menu from './DropdownMenu'
 import Loader from './Loader'
-import { Arrows } from '../icons'
+import { Arrows } from '/src/components/icons'
 
 const ConversorMoneda = () => {
   const [currencyOne, setCurrencyOne] = useState('USD')
