@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 import { useDarkMode } from './hooks/useLocalStorage'
-import { MoonIcon, SunIcon } from './icons'
+import { MoonIcon, SunIcon } from './Icons'
 
 const ToggleButton = () => {
   const { isSelected, toggleDarkMode } = useDarkMode()
