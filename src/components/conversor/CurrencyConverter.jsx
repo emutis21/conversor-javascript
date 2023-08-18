@@ -20,7 +20,7 @@ const ConversorMoneda = () => {
 
     try {
       const response = await fetch(
-      `https://v6.exchangerate-api.com/v6/10cf0941422531a7d2042965/latest/${currencyOne}`
+      // `https://v6.exchangerate-api.com/v6/10cf0941422531a7d2042965/latest/${currencyOne}`
       )
       const data = await response.json()
 
@@ -77,7 +77,7 @@ const ConversorMoneda = () => {
   isNaN(amountTwo) && setAmountTwo(0)
 
   return (
-    <article className="flex flex-col items-center gap-12 py-20 px-3">
+    <article className="flex flex-col items-center gap-6 py-8 md:gap-12 md:py-20 px-3">
       {error && (
         <span className="font-bold xl:text-4xl md:text-3xl text-lg md:pb-10 pb-5 text-center text-red-500 grid place-items-center ">
           {error}
